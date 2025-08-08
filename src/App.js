@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+function Social({name, location, bio}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <div className='container'>
+        <img src="/images/avatar-jessica.jpeg" className='profile-image' alt="Profile" />
+        <h2 className='profile-name'>{name}</h2>
+        <p className='location'>{location}</p>
+        <p className='bio'>{bio}</p>
+        <div className='social-links'>
+          <a href="#" className='social-link'>GitHub</a>
+          <a href="#" className='social-link'>Frontend Mentor</a>
+          <a href="#" className='social-link'>LinkedIn</a>
+          <a href="#" className='social-link'>Twitter</a>
+          <a href="#" className='social-link'>Instagram</a>
+        </div>
+      </div>
+    </main>
+  )
 }
 
-export default App;
+export default Social;
