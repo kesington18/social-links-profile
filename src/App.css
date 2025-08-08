@@ -23,7 +23,6 @@ img {
 .container {
     max-width: 100%;
     border-radius: 10px;
-    /* border: 2px solid #ccc; */
     padding: 30px;
     text-align: center;
     background: hsl(0, 0%, 12%);
@@ -41,7 +40,6 @@ img {
 }
 
 .social-links {
-    /* border: 2px solid #ccc; */
     display: flex;
     flex-direction: column;
     justify-content: center;
